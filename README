@@ -1,0 +1,78 @@
+ATTEMPT THIS AT YOUR OWN RISK. THIS WORKS FOR ME BUT MAY NOT WORK FOR YOU OR YOUR HEATING SETUP. USING THIS PROJECT YOU TAKE FULL RESPONSIBILITY.
+RPI THERMOSTAT setup:
+
+ROOT PASSWORD CHANGE sudo -i and then do sudo passwd
+sudo apt-get install python3-setuptools
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install requests
+INSTALL WIRING PI PACKAGE 2.52 http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
+sudo apt install python3-rpi.gpio
+sudo apt install apache2 -y
+sudo usermod -a -G www-data pi
+sudo chgrp -R www-data /var/www/html
+sudo find /var/www/html -type d -exec chmod g+rx {} +
+sudo find /var/www/html -type f -exec chmod g+r {} +
+
+sudo chown -R pi /var/www/html/
+sudo find /var/www/html -type d -exec chmod u+rwx {} +
+sudo find /var/www/html -type f -exec chmod u+rw {} +
+
+MOVE ALL HTML STUFF TO HTML FOLDER
+sudo chmod +x -R /var/www/html
+sudo chmod +x -R /home/pi/scripts
+
+sudo apt install php7.3 php7.3-mbstring php7.3-mysql php7.3-curl php7.3-gd php7.3-curl php7.3-zip -y
+sudo apt-get install php -y
+sudo adduser www-data gpio
+sudo visudo, add this to the bottom:
+pi ALL=(ALL) NOPASSWD: ALL
+www-data ALL=(ALL) NOPASSWD: ALL
+
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+
+sudo mysql -u root -p
+CREATE DATABASE status;
+CREATE USER 'pi'@'localhost' IDENTIFIED BY 'PASSWORD';
+
+NOTE: IF YOU CHANGED PASSWORD TO ANYTHING BESIDES 'PASSWORD' YOU WILL NEED TO EDIT ALL THE SCRIPTS TO THAT NEW PASSWORD IN THE MYSQL SETUP FOLDER AND READTEMP.PHP IN HTML FOLDER!!!
+
+GRANT ALL PRIVILEGES ON status.* TO 'pi'@'localhost';
+GRANT ALL PRIVILEGES ON status.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
+exit
+
+sudo apt install php-mysql
+pip install mysql-connector-python
+sudo apt-get install php5-mysql
+sudo pip3 install mysql-connector
+sudo apt-get install libmariadbclient-dev
+sudo python3 -m pip install pymysql
+sudo apt-get install python-mysqldb
+
+FOLLOW STEPS IN MYSQL FOLDERS, 
+
+DOWNLOAD AND INSTALL Adafruit_Python_DHT-1.4.1.  https://github.com/adafruit/Adafruit_Python_DHT
+sudo apt-get install build-essential python-dev
+sudo python3 -m pip install --upgrade pip setuptools wheel
+sudo python setup.py install
+sudo pip3 install Adafruit_DHT
+
+sudo crontab-e 
+NOTE: ADD THESE AT THE END OF THE FILE TO RUN AT START UP
+@hourly sudo python3 /home/pi/scripts/tempcheck.py -i &
+@reboot sudo python /home/pi/scripts/pistartmail.py -i &
+
+OPEN FILE EXPLORER, EDIT, PREFS, CHECK DON'T ASK OPTIONS ON EXE FILE
+CHANGE RPI CONFIG PERFORMANCE 28MB GPU
+
+
+
+
+ONCE INSTALLED, EDIT THE PYTHON SCRIPTS ON THE "SCRIPTS FOLDER" (move scripts folder to /home/pi/) You will need to enter your email account information if you want to get email/text notifications. If you do not, Comment out send1(),send2(),send3().
+
+COPY PICTURES FROM PICTURES FOLDER TO YOUR /home/pi/Pictures folder
+
+COPY lxsession folder to /home/pi/.config
+
+
