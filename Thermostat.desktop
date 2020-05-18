@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Thermostat
+Exec=/home/pi/scripts/thermostat.py
+Icon=/home/pi/Pictures/thermostat.png
+Terminal=true
+Type=Application
+X-KeepTerminal=true
+Name[en_US]=Thermostat

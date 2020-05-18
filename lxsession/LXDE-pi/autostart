@@ -1,0 +1,6 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@lxterminal -e sudo python3 /home/pi/scripts/thermostat.py -i 
+@xscreensaver -no-splash
+@point-rpi
+

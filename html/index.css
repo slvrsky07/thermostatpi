@@ -1,0 +1,295 @@
+body
+{
+   background-color: #A9A9A9;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_Shape5
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#Shape5
+{
+   border-width: 8;
+   vertical-align: top;
+}
+#wb_Shape4
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#Shape4
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#Button1
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background: linear-gradient(to top, #4F4F4F 0%, #4F4F4F 100%);
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button3
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button4
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button7
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button8
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#wb_settemp
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#settemp
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#wb_temp
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#temp
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#wb_humid
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#humid
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#Button5
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button6
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button9
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button10
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button11
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button12
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button2
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Button13
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button14
+{
+   border: 3px solid #000000;
+   border-radius: 4px;
+   background-color: #4F4F4F;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-weight: bold;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}

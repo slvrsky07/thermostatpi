@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<html style="background-color: #A9A9A9;">
+<meta charset="utf-8">
+<title>THERMOSTAT</title>
+<link href="thermostat.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+</head>
+<body>
+<script>
+window.setInterval("reloadIFrame();", 2000);
+function reloadIFrame() {
+document.getElementById("readtemp").src="/readtemp.php";
+document.getElementById("humidity").src="/humidity.php";
+document.getElementById("tempsetting").src="/settemp.php";
+}
+</script>
+
+<div id="wb_Shape5" style="position:absolute;left:9px;top:8px;width:249px;height:252px;z-index:0;">
+<img src="images/img0001.png" id="Shape5" alt="" style="width:249px;height:252px;"></div>
+<div id="wb_Shape4" style="position:absolute;left:9px;top:269px;width:249px;height:251px;z-index:1;">
+<img src="images/img0002.png" id="Shape4" alt="" style="width:249px;height:252px;"></div>
+<a href="/settempup.php" target="inlineframe"><input type="button" id="Button1" name="" value="UP" style="position:absolute;left:18px;top:410px;width:110px;height:97px;z-index:3;">
+<a href="/barlighton.php" target="inlineframe"><input type="button" id="Button3" name="" value="BAR LIGHT" style="position:absolute;left:268px;top:268px;width:215px;height:125px;z-index:4;">
+<a href="/barlightoff.php" target="inlineframe"><input type="button" id="Button4" name="" value="OFF" style="position:absolute;left:268px;top:398px;width:215px;height:125px;z-index:5;">
+<a href="Http://192.0.0.0" target="inlineframe"><input type="button" id="Button7" name="" value="BACKYARD" style="position:absolute;left:740px;top:268px;width:215px;height:125px;z-index:6;">
+<a href="Http://192.0.0.0" target="inlineframe"><input type="button" id="Button8" name="" value="OFF" style="position:absolute;left:740px;top:398px;width:215px;height:125px;z-index:7;">
+<div id="wb_settemp" style="position:absolute;left:138px;top:323px;width:100px;height:67px;z-index:8;">
+<b><iframe src="/settemp.php" alt="" id="tempsetting" allowTransparency="true" background="transparent" style="width:60px;height:37px;"></iframe></b></div>
+<div id="wb_temp" style="position:absolute;left:128px;top:88px;width:100px;height:67px;z-index:9;">
+<b><iframe src="/readtemp.php" alt="" id="readtemp" allowTransparency="true" background="transparent" style="width:60px;height:37px;"></iframe></b></div>
+<div id="wb_humid" style="position:absolute;left:128px;top:173px;width:100px;height:67px;z-index:10;">
+<b><iframe src="/humidity.php" alt="" id="humidity" allowTransparency="true" background="transparent" style="width:60px;height:37px;"></iframe></b></div>
+<div id="wb_Text1" style="position:absolute;left:28px;top:99px;width:81px;height:19px;z-index:11;">
+<span style="color:#000000;font-family:Verdana;font-size:16px;"><strong>TEMP</strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:22px;top:185px;width:111px;height:19px;z-index:12;">
+<span style="color:#000000;font-family:Verdana;font-size:16px;"><strong>HUMIDITY</strong></span></div>
+<div id="wb_Text3" style="position:absolute;left:28px;top:335px;width:91px;height:19px;z-index:13;">
+<span style="color:#000000;font-family:Verdana;font-size:16px;"><strong>SET TEMP</strong></span></div>
+<a href="/signlighton.php" target="inlineframe"><input type="button" id="Button5" name="" value="SIGN LIGHT" style="position:absolute;left:505px;top:268px;width:215px;height:125px;z-index:14;">
+<a href="/signlightoff.php" target="inlineframe"><input type="button" id="Button6" name="" value="OFF" style="position:absolute;left:505px;top:398px;width:215px;height:125px;z-index:15;">
+<a href="Http://192.168.0.0" target="inlineframe"><input type="button" id="Button9" name="" value="DRIVEWAY " style="position:absolute;left:740px;top:8px;width:215px;height:125px;z-index:16;">
+<a href="Http://192.168.0.0" target="inlineframe"><input type="button" id="Button10" name="" value="OFF" style="position:absolute;left:740px;top:135px;width:215px;height:125px;z-index:17;">
+<a href="Http://192.168.0.0" target="inlineframe"><input type="button" id="Button11" name="" value="SPOT LIGHT " style="position:absolute;left:505px;top:8px;width:215px;height:125px;z-index:18;">
+<a href="Http://192.168.0.0" target="inlineframe"><input type="button" id="Button12" name="" value="OFF" style="position:absolute;left:505px;top:135px;width:215px;height:125px;z-index:19;">
+<a href="/settempdown.php" target="inlineframe"><input type="button" id="Button2" name="" value="DOWN" style="position:absolute;left:138px;top:410px;width:110px;height:97px;z-index:20;">
+<div id="wb_Text4" style="position:absolute;left:35px;top:35px;width:197px;height:19px;z-index:21;">
+<span style="color:#000000;font-family:Verdana;font-size:16px;"><strong>CURRENT READINGS</strong></span></div>
+<a href="/fanon.php" target="inlineframe"><input type="button" id="Button13" name="" value="FAN" style="position:absolute;left:268px;top:8px;width:215px;height:125px;z-index:22;">
+<a href="/fanoff.php" target="inlineframe"><input type="button" id="Button14" name="" value="OFF" style="position:absolute;left:268px;top:135px;width:215px;height:125px;z-index:23;">
+<p style="text-align: center;"><a><iframe width="300" height="150" style="display: none;" name="inlineframe"></iframe></a></p>
+<script>
+function reload() { 
+                document.getElementById('tempsetting').src += '';
+            } 
+            Button1.onclick = reload;
+	    Button2.onclick = reload;
+</script>
+</body>
+</html>
